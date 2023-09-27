@@ -4,23 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML 문서 구조 시맨틱 태그 사용</title>
+    <title>구승현 홈페이지</title>
     <style>
         html, body {margin: 0; padding: 0; height: 100%;}
         header {width: 100%; height: 15%; background: yellow;}
-        nav {width: 15%; height: 70%; float: left; background: orange;}
-        section {width: 70%; height: 70%; float: left; background: olivedrab;}
+        nav {height: 5%; background: ivory;}
+        #menubar {
+            display: table; margin-left: auto; margin-right: auto;
+        }
+        #menubar ul {
+            margin: 0;
+            padding: 0;
+            width: 800px;
+        }
+        #menubar ul li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 15px 30px;
+        }
+        #menubar ul li a {
+            color: black;
+            text-decoration: none;
+            font-family: 휴먼둥근헤드라인;
+        }
+        #menubar ul li a:hover {
+            color : orange
+        }
+
+        #aside2 {width: 15%; height: 70%; float: left; background: orange;}
+        section {width: 70%; height: 70%; float: left; background: rgb(224, 233, 184);}
         aside {width: 15%; height: 70%; float: left; background: orange;}
-        footer {width: 100%; height: 15%; clear: both; background: plum;}
+        footer {width: 100%; height: 15%; clear: both; background: ivory;}
     </style>
 </head>
 <body>
-    <header><table align="center"><td><a href="index.html"><img src="./img/그림5.png" alt="그림5" width="300"></a></td></table></header>
-    <nav>nav</nav>
-    <section><a href="9월6일3교시.html">9월6일3교시 실습</a><br>
-        <a href="9월6일3교시2.html">9월6일3교시 실습2-블럭태그/인라인태그</a><br>
-        <a href="9월13일.html">홈피 계획도</a></section>
+    <header><table align="center"><td><a href="#"><img src="./img/thank-you.png" alt="감사합니다" width="300"></a></td></table></header>
+    <nav id="menubar"><ul><li><a href="#">감사하며 살면 좋은 이유</a></li><li><a href="#">감사 관련 영상</a></li><li><a href="#">감사 한 줄</a></li><li><a href="#">감사를 실천하는 사람들</a></li></ul></nav>
+    <aside id="aside2">aside2</aside>
+    <section align="center"><p>감사는 기쁨을 낳고,<br>기적을 낳고,<br>또 다른 감사를 낳는다.<br>감사하는 마음은 행복의 열쇠다.</p><br><p>"불행할 때 감사하면 불행이 끝이 나고,<br>형통할 때 감사하면 형통이 다시 찾아온다." -스펄전</p><br><p>"하루에도 수백만 가지의 기적이 일어나지만,<br>그 기적으로 믿는 사람에게만 기적이 된다." -로버트 슐러</p>
+    <fieldset><legend>감사(感謝)란?</legend>1. 고마움을 나타내는 인사<br>2. 고맙게 여김. 또는 그런 마음<br><img src="./img/book.png" alt="책" width="300"></fieldset></section>
     <aside>aside</aside>
-    <footer>footer</footer>
+    <footer>만든 사람 : 202214001 구승현</footer>
 </body>
 </html>
