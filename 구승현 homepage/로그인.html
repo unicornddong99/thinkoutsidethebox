@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 입력 폼</title>
+</head>
+<body>
+    <h3>자기소개서 작성</h3>
+    <hr>
+    <form>
+        이름 : <input type="text" value=""><br>
+        암호 : <input type="password" value="" maxlength="4"><br>
+        자소서 : <textarea cols="20" rows="5">이곳에 자기소개서 작성
+        </textarea>
+    </form>
+    <h3>버튼을 만들자</h3>
+    <hr>
+    <form>
+        검색 : <input type="text" size="10" value=""><input type="button" value="Q1"><button type="button">Q2</button><br>
+        submit 버튼 : <input type="submit" value="전송1"><button type="submit">전송2</button><br>
+        reset 버튼 : <input type="reset" value="리셋1"><button type="reset">리셋2</button><br>
+        이미지버튼 : <input type="image" src="./img/크롬.png" alt="이미지 버튼"><button type="button"><img src="./img/크롬.png" alt="이미지 버튼"></button>
+    </form>
+    <h3>회원 정보를 입력해주세요.</h3>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>회원정보</legend>
+            이메일 : <input type="email"><br>
+            홈페이지 : <input type="url"><br>
+            전화번호 : <input type="tel">
+        </fieldset>
+        <small>질문 : Tel. 010-1234-5678</small>
+    </form>
+    <h3>나라</h3>
+    <hr>
+    나라 : <input type="text" list="countries"><datalist id="countries">
+        <option value="가나">
+        <option value="스위스">
+        <option value="브라질">
+    </datalist>
+</body>
+</html>
