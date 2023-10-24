@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>감사 관련 영상</title>
+    <title>감사하자! : 감사 관련 영상</title>
     <style>
         html, body {
             margin: 0; 
             padding: 0; 
             height: 100%;
+            background: whitesmoke;
         }
         header {
             width: 100%; 
@@ -18,7 +19,6 @@
         }
         nav {
             height: 5%; 
-            background: ivory;
         }
         #menubar {
             display: table; 
@@ -44,26 +44,39 @@
             color : orange
         }
 
-        #aside2 {
-            width: 15%; 
-            height: 100%; 
-            float: left; 
-            background: orange;
+        #tt {
+            font-family: 휴먼둥근헤드라인;
+            font-size: 30px;
+            color: teal;
+            text-align: center;
+            text-shadow: 5px 5px 5px yellow;
         }
 
-        section {
-            width: 70%; 
-            height: 100%; 
-            float: left; 
-            background: rgb(224, 233, 184);
+        header img:hover {
+            transform: scale(2, 2);
         }
 
-        aside {
-            width: 15%; 
-            height: 100%; 
-            float: left; 
-            background: orange;
+        h1 {
+            color: teal;
+            text-shadow: 5px 5px 5px yellow;
+            font-family: 휴먼편지체;
         }
+
+        section p {
+            font-family: 휴먼편지체;
+            cursor: default;
+        }
+
+        section p:hover {
+            color: teal;
+        }
+
+        footer {
+            height: 5%;
+            padding-left: 10px;
+            font-family: 휴먼편지체;
+        }
+
     </style>
 </head>
 <body>
@@ -92,8 +105,19 @@
             </li>
         </ul>
     </nav>
-    <aside id="aside2">aside2</aside>
-    <section>빈 공간</section>
-    <aside>aside</aside>
+    <section align="center">
+        <h1>감사 관련 영상</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZHXnqWpH8Q4?si=QYKt8844BpNHfceC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>감사함을 표시하는 감동 스토리</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hpfNfPqqBN0?si=Rhs0I0Tl-Bxp99pM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>감사하는 마음이 '뇌'도 '삶'도 바꾼다…의학적으로 증명 / SBS</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w3bPGXKgW-8?si=zY0RQqSqMjrYnJRz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>[EBS x 초록우산어린이재단] 실험카메라, 갑자기 감사편지를 쓰게 된다면?</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HwXaoqRemWU?si=VQ0vVp8HjKgeHm5O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <p>우리가 잊지 말아야 할 마음가짐 [감사하는 마음, 삶의 만족]</p>
+    </section>
+    <footer>
+        <p>Copyright 2023 by Seunghyun</p>
+    </footer>
 </body>
 </html>

@@ -10,6 +10,7 @@
             margin: 0; 
             padding: 0; 
             height: 100%;
+            background: whitesmoke;
         }
         header {
             width: 100%; 
@@ -18,7 +19,6 @@
         }
         nav {
             height: 5%; 
-            background: ivory;
         }
         #menubar {
             display: table; 
@@ -41,23 +41,25 @@
             font-family: 휴먼둥근헤드라인;
         }
         #menubar ul li a:hover {
-            color : orange
+            color: orange;
         }
 
-        #aside2 {
+        article {
             width: 15%; 
             height: 70%; 
             float: left; 
             background: orange;
+            background-image: url(./img/외계인\ 감사.png);
+            background-size: 300px 660px;
+            background-repeat: no-repeat;
         }
         section {
             width: 70%; 
             height: 70%; 
             float: left; 
-            background: rgb(224, 233, 184);
         }
 
-        aside {
+        #tl {
             width: 15%; 
             height: 70%; 
             float: left; 
@@ -68,17 +70,17 @@
             width: 100%; 
             height: 5%; 
             clear: both; 
-            background: ivory;
             padding-top: 1px;
             cursor: default;
         }
 
         section {
             font-family: 휴먼편지체;
+            font-size: 18px;
         }
 
         section p:hover {
-            color: orangered;
+            color: teal;
         }
 
         section {
@@ -87,6 +89,10 @@
 
         #fs {
             font-family: 휴먼둥근헤드라인;
+            width: 800px;
+            height: 342px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #tj {
@@ -111,6 +117,16 @@
             animation-duration: 4s;
             animation-iteration-count: infinite;
         }
+
+        header img:hover {
+            transform: scale(2, 2);
+        }
+
+        footer p {
+            font-family: 휴먼편지체;
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -137,9 +153,9 @@
             </li>
         </ul>
     </nav>
-    <aside id="aside2">
-        <img src="./img/외계인 감사.png" alt="외계인의 감사" width="300" height="660">
-    </aside>
+    <article>
+
+    </article>
     <section align="center">
         <p>감사는 기쁨을 낳고,<br>
             기적을 낳고,<br>
@@ -149,21 +165,22 @@
             형통할 때 감사하면 형통이 다시 찾아온다." -스펄전</p><br>
         <p>"하루에도 수백만 가지의 기적이 일어나지만,<br>
             그 기적으로 믿는 사람에게만 기적이 된다." -로버트 슐러</p>
-    <fieldset id="fs">
-        <legend>감사(感謝)란?</legend>
-        1. 고마움을 나타내는 인사<br>
-        2. 고맙게 여김. 또는 그런 마음<br>
-        <img src="./img/book.png" alt="책" width="300">
-    </fieldset>
+        <fieldset id="fs">
+            <legend>감사(感謝)란?</legend>
+            1. 고마움을 나타내는 인사.<br>
+            2. 고맙게 여김. 또는 그런 마음.<br>
+            <img src="./img/book.png" alt="책" width="300">
+        </fieldset>
 </section>
-    <aside>
+    <nav id="tl">
         <a href="감사편지_쓰기.html" target="_blank">
-            <img src="./img/감사편지 쓰러 가기.png" alt="감사편지 쓰러 가기" width="280" height="675" style="float: right;">
+            <img src="./img/감사편지 쓰러 가기.png" alt="감사편지 쓰러 가기" width="280" height="675">
         </a>
-    </aside>
+    </nav>
     <footer align="center">
         <p id="tj">&lt;깔라미또 행성에서 온 유니콘치즈 핫식스 섹시 4세의 감사 여정&gt;</p>
-        <b>감사하는 방법을 배우고, 감사하며 살면 좋은 이유를 알며 감사 관련 영상을 시청한 후, 감사 한 줄이나 감사 편지를 고향 행성에 있는 분들에게 남겨보아요~!</b>
+        <b><i>감사하는 방법을 배우고, 감사하며 살면 좋은 이유를 알며 감사 관련 영상을 시청한 후, 감사 한 줄이나 감사 편지를 고향 행성에 있는 분들에게 남겨보아요~!</i></b>
+        <p align="left">Copyright 2023 by Seunghyun</p>
     </footer>
 </body>
 </html>
