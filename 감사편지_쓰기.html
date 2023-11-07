@@ -56,6 +56,24 @@
             transform: scale(2, 2);
         }
 
+        section table {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            background: orange;
+        }
+
+        .cen {
+            text-align: center;
+        }
+
+        section {
+            background-image: url(./img/감사\ 편지.png);
+            background-repeat: no-repeat;
+            background-size: 90em 40em;
+            background-position: center;
+        }
+
     </style>
 </head>
 <body>
@@ -85,7 +103,31 @@
         </ul>
     </nav>
     <section>
-        section
+        <form action="전송_완료.html">
+            <table border="1">
+                <tr>
+                    <td colspan="2" class="cen"><b>감사편지 쓰기</b></td>
+                </tr>
+                <tr>
+                    <td>받는 사람</td>
+                    <td><input type="email" placeholder="thank@you" required></td>
+                </tr>
+                <tr>
+                    <td>제목</td>
+                    <td><input type="text" placeholder="제목을 적어주세요." required></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td><textarea cols="60" rows="30" placeholder="내용을 적어주세요." required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="cen">
+                        <input type="submit" value="보내기">
+                        <input type="reset" value="다시 쓰기">
+                    </td>
+                </tr>
+        </table>
+    </form>
     </section>
 </body>
 </html>
