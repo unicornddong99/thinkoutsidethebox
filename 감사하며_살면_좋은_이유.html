@@ -56,6 +56,13 @@
             transform: scale(2, 2);
         }
 
+        section {
+            font-family: 휴먼편지체;
+            padding-left: 30px;
+        }
+
+        
+
     </style>
 </head>
 <body>
@@ -85,7 +92,36 @@
         </ul>
     </nav>
     <section>
-        section
+        <p>유니콘치즈는 감사하는 방법을 알게 되어 <mark>인간들과 친해졌답니다.</,></p>
+
+        <select id="mySelect" onchange="myFunction()">
+        <option value="1">인간과 지구에 남는다.</option>
+        <option value="2">인간을 데리고 고향 행성으로 돌아간다.</option>
+        <option value="3">혼자 고향으로 돌아간다.</option>
+        </select>
+
+        <p>감사하는 삶을 알게 된 유니콘치즈는 어떻게 될까요?</p>
+
+        <p id="demo"></p>
+        <p id="demo1"></p>
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("mySelect").value;
+        var y = document.getElementById("demo1");
+        document.getElementById("demo").innerHTML = "내가 원하는 엔딩 : " + x;
+        if (x == '1') {
+        y.innerHTML = "<img src = './img/엔딩1.jpg'>"
+        }
+        else if (x == '2') {
+        y.innerHTML = "<img src = './img/엔딩2.jpg'>"
+        
+        }
+        else {
+        y.innerHTML = "<img src = './img/엔딩3.jpg'>"
+    }
+    }
+    </script>
     </section>
 </body>
 </html>
